@@ -3,15 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Narayana2527/Nani_Project1.git",
+  "homepage": "https://Narayana2527.github.io/NaniMagic1",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite",    
     "build": "vite build",
+    "predeply":"npm run build",
+    "deploy":"gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build:css": "postcss src/index.css -o src/tailwind.css",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d bulid"
+    "build:css": "postcss src/index.css -o src/tailwind.css"
   },
   "dependencies": {
     "axios": "^1.7.2",
